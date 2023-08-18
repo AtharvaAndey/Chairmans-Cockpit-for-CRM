@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Table</title>
+  <link rel="stylesheet" href="tstyle.css">
+  <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</head>
+<body>
+    <h3>Chairman's Cockpit for CRM</h3>
+<div class="content">
+  <div></div>
+  <div class="tickbox">
+  <ul>
+    <li><input type="checkbox" class="project-checkbox" value="Balmoral Riverside"> Balmoral Riverside</li>
+    <li><input type="checkbox" class="project-checkbox" value="Eon Homes"> Eon Homes</li>
+    <li><input type="checkbox" class="project-checkbox" value="Voyage"> Voyage</li>
+    <li><input type="checkbox" class="project-checkbox" value="Apostophe Next"> Apostophe Next</li>
+    <li><input type="checkbox" class="project-checkbox" value="Apostophe Hinjewadi"> Apostophe Hinjewadi</li>
+    <li><input type="checkbox" class="project-checkbox" value="Epitome"> Epitome</li>
+  </ul></div>
+  <div class="graph one">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <div id="chartContainer" style="height: 100%; width: 100%;"></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img_snow_wide.jpg" style="height: 100%; width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img_mountains_wide.jpg" style="height: 100%; width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+   
+  </div>
+  <table id="project-table1">
+    <caption>Total Demand</caption>
+    <thead>
+      <tr>
+        <th rowspan="2" >Project Name</th>
+        <th colspan="4" >Demand</th>
+        <th colspan="4" >collections</th>
+        <th colspan="4" >Promise to pay(in days)</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <th>MTD</th>
+        <th>QTD</th>
+        <th>YTD</th>
+        <th>PTD</th>
+        <th>MTD</th>
+        <th>QTD</th>
+        <th>YTD</th>
+        <th>PTD</th>
+        <th>10 </th>
+        <th>20 </th>
+        <th>30 </th>
+        <th>60 </th>
+      </tr>
+        <tr class="project-row" data-project="Balmoral Riverside">
+          <td>Balmoral Riverside</td>
+  
+        </tr>
+        <tr class="project-row" data-project="Eon Homes">
+          <td>Eon Homes</td>
+  
+        </tr>
+        <tr class="project-row" data-project="Voyage">
+          <td>Voyage</td>
+    
+        </tr>
+        <tr class="project-row" data-project="Apostophe Next">
+          <td>Apostophe Next</td>
+        
+        </tr>
+        <tr class="project-row" data-project="Apostophe Hinjewadi">
+          <td>Apostophe Hinjewadi</td>
+  
+        </tr>
+        <tr class="project-row" data-project="Epitome">
+          <td>Epitome</td>
+  
+        </tr>
+        <tr >
+            <td>Total</td>
+    
+          </tr>
+        <!-- Add more rows for other projects -->
+      </tbody>
+  </table>
+ 
+
+  <div class="graph two">
+    <div id="chartContainer2" style="height: 100%; width: 100%;"></div>
+  </div>
+  <table id="project-table2">
+    <caption>Total O/S Ageing</caption>
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>O/S Balance</th>
+        <th>Due not O/S</th>
+        <th>10-30 D</th>
+        <th>31-60 D</th>
+        <th>61-90 D</th>
+        <th>91-180 D</th>
+        <th>180+ D</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="project-row" data-project="Balmoral Riverside">
+          <td>Balmoral Riverside</td>
+  
+        </tr>
+        <tr class="project-row" data-project="Eon Homes">
+          <td>Eon Homes</td>
+  
+        </tr>
+        <tr class="project-row" data-project="Voyage">
+          <td>Voyage</td>
+    
+        </tr>
+        <tr class="project-row" data-project="Apostophe Next">
+          <td>Apostophe Next</td>
+        
+        </tr>
+        <tr class="project-row" data-project="Apostophe Hinjewadi">
+          <td>Apostophe Hinjewadi</td>
+  
+        </tr>
+        <tr class="project-row" data-project="Epitome">
+          <td>Epitome</td>
+  
+        </tr>
+        <tr >
+            <td>Total</td>
+    
+          </tr>
+        <!-- Add more rows for other projects -->
+      </tbody>
+  </table>
+  <div class="graph three">
+    <div id="chartContainer3" style="height: 100%; width: 100%;"></div>
+  </div>
+  <table id="project-table3">
+    <caption>Total Registration exception</caption>
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Total Sold Unit</th>
+        <th>Count of Registered</th>
+        <th>Count of un-registered</th>
+        <th>0-15 D</th>
+        <th>31-60 D</th>
+        <th>61-90 D</th>
+        <th>90+ D</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="project-row" data-project="Balmoral Riverside">
+        <td>Balmoral Riverside</td>
+       
+      </tr>
+      <tr class="project-row" data-project="Eon Homes">
+        <td>Eon Homes</td>
+        
+      </tr>
+      <tr class="project-row" data-project="Voyage">
+        <td>Voyage</td>
+     
+      </tr>
+      <tr class="project-row" data-project="Apostophe Next">
+        <td>Apostophe Next</td>
+        
+      </tr>
+      <tr class="project-row" data-project="Apostophe Hinjewadi">
+        <td>Apostophe Hinjewadi</td>
+      
+      </tr>
+      <tr class="project-row" data-project="Epitome">
+        <td>Epitome</td>
+       
+      </tr>
+      <tr >
+        <td>Total</td>
+
+      </tr>
+      <!-- Add more rows for other projects -->
+    </tbody>
+  </table>
+
+
+
+</div>
+
+  <script src="tscript.js"></script>
+</body>
+</html>
